@@ -24,45 +24,8 @@
     
     </div>
     
-    <!--<script src="buttonsGrid.js" type="text/javascript"></script>-->
-    <script>
-    
-        // Define array to store button elements
-        const myButtons = [];
-        const changeOrder = [1,2,3,6,9,8,7,4];
+    <script src="buttonsGrid.js" type="text/javascript"></script>
 
-        // Access buttons and store in myButtons array
-        for (let i = 1; i < 10; i++) {
-            if (i == 5) {
-                continue;
-            }
-            let btn = document.getElementById(`btn${i}`);
-            myButtons.push(btn);   
-        }
-
-        function changeButton(){
-            // Change buttons
-            myButtons[1].innerHTML = changeOrder[0]; // 7 becomes 8
-            myButtons[2].innerHTML = changeOrder[1]; //8 becomes 9
-
-            myButtons[4].innerHTML = changeOrder[2]; // 9 becomes 6
-            myButtons[7].innerHTML = changeOrder[3]; //6 becomes 3
-            myButtons[6].innerHTML = changeOrder[4]; //3 becomes 2
-
-            myButtons[5].innerHTML = changeOrder[5]; // 2 becomes 1
-            myButtons[3].innerHTML = changeOrder[6];
-
-            myButtons[0].innerHTML = changeOrder[7]; // 4 becomes 7
-
-            // Update the order of the numbers in changeOrder
-            let x = changeOrder.pop();
-            changeOrder.unshift(x)
-        }  
-        
-    </script>
-    
-
-    
 </body>
 
 </html>
